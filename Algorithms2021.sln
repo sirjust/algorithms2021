@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms2021", "Algorithms2021\Algorithms2021.csproj", "{DB36F052-5B5F-47C1-A8EC-5055D5BDA45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack2021", "Blackjack2021\Blackjack2021.csproj", "{3C814138-87D7-48D2-AC74-DBD4CFDC6858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB36F052-5B5F-47C1-A8EC-5055D5BDA45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB36F052-5B5F-47C1-A8EC-5055D5BDA45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB36F052-5B5F-47C1-A8EC-5055D5BDA45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB36F052-5B5F-47C1-A8EC-5055D5BDA45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE2A4D7A-E7F2-48C0-967D-839C8C0FD6FE}
+	EndGlobalSection
+EndGlobal
