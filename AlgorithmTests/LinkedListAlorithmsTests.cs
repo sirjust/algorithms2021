@@ -68,5 +68,28 @@ namespace AlgorithmTests
             Assert.AreEqual(4, list.Head.Next.Next.Next.Data);
             Assert.IsNull(list.Head.Next.Next.Next.Next);
         }
+
+        [TestMethod]
+        public void DeleteDupesFromBookSucceeds_WhenMultipleDuplicate()
+        {
+            // Arrange
+            IntegerLinkedList list = new IntegerLinkedList { Head = new IntegerNode(5) };
+            list.AddToFront(12);
+            list.AddToFront(5);
+            list.AddToFront(12);
+            list.AddToFront(5);
+            list.AddToFront(3);
+            list.AddToFront(-6);
+
+            // Act
+            list.DeleteDupesFromBook(list.Head);
+
+            // Assert
+            Assert.AreEqual(-6, list.Head.Data);
+            Assert.AreEqual(3, list.Head.Next.Data);
+            Assert.AreEqual(5, list.Head.Next.Next.Data);
+            Assert.AreEqual(12, list.Head.Next.Next.Next.Data);
+            Assert.IsNull(list.Head.Next.Next.Next.Next);
+        }
     }
 }

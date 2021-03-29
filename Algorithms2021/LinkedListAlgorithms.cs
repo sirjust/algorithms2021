@@ -61,5 +61,25 @@ namespace Algorithms2021
                 }
             }
         }
+
+        // This uses a HashSet and takes only O(n) time
+        public void DeleteDupesFromBook(IntegerNode node)
+        {
+            HashSet<int> set = new HashSet<int>();
+            IntegerNode previous = null;
+            while (node != null)
+            {
+                if (set.Contains(node.Data))
+                {
+                    previous.Next = node.Next;
+                }
+                else
+                {
+                    set.Add(node.Data);
+                    previous = node;
+                }
+                node = node.Next;
+            }
+        }
     }
 }
