@@ -45,5 +45,38 @@ namespace Algorithms2021
             array[j] = temp;
             return array;
         }
+
+        public static string ReverseStringWithStack(string input)
+        {
+            if (input == null || input.Length == 0 || input.Length == 1) return input;
+
+            var stack = new Stack<char>();
+            var reversedArray = new char[input.Length];
+            foreach(char c in input)
+            {
+                stack.Push(c);
+            }
+            
+            for(int i = 0; i < reversedArray.Length; i++)
+            {
+                reversedArray[i] = stack.Pop();
+            }
+            return string.Join("", reversedArray);
+        }
+
+        public static string ReverseStringWithOnlyArray(string input)
+        {
+            if (input == null || input.Length == 0 || input.Length == 1) return input;
+            var reversedArray = new char[input.Length];
+
+            int counter = 0;
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                reversedArray[i] = input[counter];
+                counter++;
+            }
+
+            return string.Join("", reversedArray);
+        }
     }
 }
