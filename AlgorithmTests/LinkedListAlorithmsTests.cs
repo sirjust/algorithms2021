@@ -70,7 +70,7 @@ namespace AlgorithmTests
         }
 
         [TestMethod]
-        public void DeleteDupesFromBookSucceeds_WhenMultipleDuplicate()
+        public void DeleteDupesFromBookSucceeds_WhenMultipleDuplicates()
         {
             // Arrange
             IntegerLinkedList list = new IntegerLinkedList { Head = new IntegerNode(5) };
