@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 
 namespace AlgorithmTests
@@ -86,6 +87,20 @@ namespace AlgorithmTests
             // Arrange
             var input = new string('a', 5000000);
             var expected = input;
+
+            // Act
+            var actual = StringAndArrayAlgorithms.ReverseStringWithStack(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ReverseStringWithStack_Successfully_Reverses()
+        {
+            // Arrange
+            var input = new string("abcde");
+            var expected = string.Join("", input.Reverse());
 
             // Act
             var actual = StringAndArrayAlgorithms.ReverseStringWithStack(input);
