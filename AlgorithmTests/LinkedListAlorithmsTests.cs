@@ -91,5 +91,42 @@ namespace AlgorithmTests
             Assert.AreEqual(12, list.Head.Next.Next.Next.Data);
             Assert.IsNull(list.Head.Next.Next.Next.Next);
         }
+
+        [TestMethod]
+        public void GetKthToLast_ReturnsCorrectNode()
+        {
+            // Arrange
+            var list = GetLinkedList();
+
+            // Act
+            var node = LinkedListAlgorithms.GetKthToLast(list, 3);
+
+            // Assert
+            Assert.AreEqual(30, node.Data);
+        }
+
+        [TestMethod]
+        public void GetKthToLastFromBook_ReturnsCorrectNode()
+        {
+            // Arrange
+            var list = GetLinkedList();
+
+            // Act
+            var node = LinkedListAlgorithms.GetKthToLastFromBook(list, 3);
+
+            // Assert
+            Assert.AreEqual(30, node.Data);
+        }
+
+        private IntegerLinkedList GetLinkedList()
+        {
+            var list = new IntegerLinkedList();
+            list.AddToFront(10);
+            list.AddToFront(20);
+            list.AddToFront(30);
+            list.AddToFront(40);
+            list.AddToFront(50);
+            return list;
+        }
     }
 }

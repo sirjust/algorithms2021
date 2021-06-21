@@ -6,7 +6,51 @@ namespace Algorithms2021
 {
     public static class LinkedListAlgorithms
     {
-        
+        // this is my implementation, and involves iterating twice
+        public static IntegerNode GetKthToLast(IntegerLinkedList list, int numberFromLast)
+        {
+            if (list.Head == null) return null;
+            var numberOfNodes = 1;
+            var node = list.Head;
+            while(node.Next != null)
+            {
+                numberOfNodes++;
+                node = node.Next;
+            }
+
+            node = list.Head;
+            var numberFromFront = numberOfNodes - numberFromLast;
+            if (numberFromFront <= 0) return null;
+            while(numberFromFront > 0)
+            {
+                node = node.Next;
+                numberFromFront--;
+            }
+            return node;
+        }
+
+        // this is the book's implementation, and only iterates once
+        public static IntegerNode GetKthToLastFromBook(IntegerLinkedList list, int numberFromLast)
+        {
+            if (list.Head == null) return null;
+            IntegerNode p1 = list.Head;
+            IntegerNode p2 = list.Head;
+
+            // Move p1 k nodes into the list
+            for(int i = 0; i < numberFromLast; i++)
+            {
+                if (p1 == null) return null;
+                p1 = p1.Next;
+            }
+
+            // move them at the same pace. When p1 hits the end, p2 will be at the right element
+            while(p1 != null)
+            {
+                p1 = p1.Next;
+                p2 = p2.Next;
+            }
+            return p2;
+        }
     }
 
     public class IntegerNode

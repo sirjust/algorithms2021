@@ -123,5 +123,19 @@ namespace AlgorithmTests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void RemoveDuplicatesFromArraySucceedsWithHashSet()
+        {
+            // Arrange
+            var input = new string("The quick brown fox jumped over the lazy dog.");
+            var expected = "The quickbrownfxjmpdvtlazyg.";
+
+            // Act
+            var actual = StringAndArrayAlgorithms.RemoveDuplicatesFromString(input);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

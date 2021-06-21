@@ -78,5 +78,17 @@ namespace Algorithms2021
 
             return string.Join("", reversedArray);
         }
+
+        public static string RemoveDuplicatesFromString(string input)
+        {
+            if (input == null || input.Length <= 1) return input;
+            HashSet<char> set = new HashSet<char>();
+            foreach(char c in input)
+            {
+                if (!set.Contains(c)) set.Add(c);
+            }
+            var removedDupes = set.ToArray();
+            return string.Join("", removedDupes);
+        }
     }
 }
