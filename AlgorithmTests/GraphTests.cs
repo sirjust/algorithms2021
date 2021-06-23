@@ -37,5 +37,18 @@ namespace AlgorithmTests
             // Assert
             // See console
         }
+
+        [TestMethod]
+        public void GraphCanDepthFirstSearch_WithHashSet()
+        {
+            // Arrange
+            var graph = GraphAlgorithms.GetGraph();
+
+            // Act
+            graph.DepthFirstSearchWithHashSet(graph.Nodes.Where(n => n.Name == "Gamma").FirstOrDefault());
+
+            // Assert
+            // See console
+        }
     }
 }

@@ -32,6 +32,23 @@ namespace Algorithms2021.Graphs
             }
         }
 
+        public void DepthFirstSearchWithHashSet(GraphNode root, HashSet<string> hashSet = null)
+        {
+            if (root == null) return;
+            if (hashSet == null) hashSet = new HashSet<string>();
+
+            if (!hashSet.Contains(root.Name))
+            {
+                Console.WriteLine($"Node {root.Name} visited");
+                hashSet.Add(root.Name);
+            }
+
+            foreach (GraphNode node in root.AdjacentNodes)
+            {
+                if (!hashSet.Contains(node.Name)) DepthFirstSearchWithHashSet(node, hashSet);
+            }
+        }
+
         public void BreadthFirstSearch(GraphNode root)
         {
             Queue<GraphNode> queue = new Queue<GraphNode>();
