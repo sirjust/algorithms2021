@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms2021", "Algorithm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blackjack2021", "Blackjack2021\Blackjack2021.csproj", "{3C814138-87D7-48D2-AC74-DBD4CFDC6858}"
 EndProject
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmTests", "AlgorithmTests\AlgorithmTests.csproj", "{40087F69-F470-4DCF-8D89-153F2EB5C849}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{5E231E93-324F-427F-95C2-6E8E9A67A00A}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,17 @@ Global
 		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C814138-87D7-48D2-AC74-DBD4CFDC6858}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{40087F69-F470-4DCF-8D89-153F2EB5C849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{40087F69-F470-4DCF-8D89-153F2EB5C849}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40087F69-F470-4DCF-8D89-153F2EB5C849}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40087F69-F470-4DCF-8D89-153F2EB5C849}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{5E231E93-324F-427F-95C2-6E8E9A67A00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E231E93-324F-427F-95C2-6E8E9A67A00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E231E93-324F-427F-95C2-6E8E9A67A00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E231E93-324F-427F-95C2-6E8E9A67A00A}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
